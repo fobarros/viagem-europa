@@ -1,0 +1,22 @@
+# =====================================================================
+# Repositório publicável — fobarros/viagem-europa (GitHub Pages)
+#
+# O GitHub Pages NUNCA é privado. Qualquer coisa commitada aqui vira
+# arquivo público na internet, para sempre, com histórico.
+# Por isso este .gitignore bloqueia tudo por padrão e libera só três
+# arquivos, um por um. Assim um `git add -A` distraído não sobe nada.
+#
+# NÃO AFROUXE. Em especial, nunca libere:
+#   viagem.html            — o roteiro em claro, com confirmação e PIN
+#   *.md do projeto        — CLAUDE.md, 00-LEIA-ME.md, 02-roteiro-master.md…
+#   Reservas/              — PDFs do Booking, LATAM e Sixt
+#   tools/publicar.mjs     — o cifrador mora na pasta do projeto, não aqui
+# =====================================================================
+
+# 1) bloqueia tudo
+*
+
+# 2) libera só o que pode ser público
+!index.html
+!.gitignore
+!README.md
