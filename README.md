@@ -17,19 +17,20 @@ proteção é a força da senha.
 
 ## Como republicar depois de mudar o roteiro
 
-O conteúdo em claro e o script que cifra ficam **fora deste repositório**, na
-pasta de trabalho do projeto. Aqui só entra o resultado.
+O conteúdo em claro e o script que cifra ficam **fora deste repositório**, no
+repo privado `fobarros/viagem-europa-hidden`. Aqui só entra o resultado.
 
 ```powershell
-cd "C:\Users\fobar\Downloads\Claude\Viagem Europa"
+cd "C:\Dev\viagem-europa-hidden"
 node tools\publicar.mjs
 ```
 
-O script pede a senha na tela (sem eco), regrava o `index.html` desta pasta, e
-aí é só commitar **esse arquivo**:
+O script pede a senha na tela (sem eco), calcula sozinho a pasta irmã
+`viagem-europa-web` e regrava o `index.html` lá — não depende de usuário nem
+de drive fixo. Depois é só commitar **esse arquivo**:
 
 ```powershell
-cd C:\Users\fobar\Downloads\viagem-europa-web
+cd C:\Dev\viagem-europa-web
 git add index.html
 git commit -m "Atualiza roteiro"
 git push
